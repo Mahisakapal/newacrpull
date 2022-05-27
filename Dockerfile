@@ -1,3 +1,4 @@
-FROM alpine:3.14
-
-ENTRYPOINT ["sleep" "5000"]
+FROM ubuntu
+RUN apt-get update -y
+ENV name madhu sudhan
+ENTRYPOINT ["/bin/bash", "-c", "echo Hello, $name"]
