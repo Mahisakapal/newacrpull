@@ -25,3 +25,5 @@ steps:
     repository: 'amardipnode'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+    addPipelineData: false
+    addBaseImageData: false
